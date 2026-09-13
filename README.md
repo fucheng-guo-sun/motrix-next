@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="docs/media/rayburst-banner.png" alt="Rayburst — From link to local, in a flash" width="720" />
+  <img src="docs/media/rayburst-banner.png" alt="Rayburst — From link to local, in a flash" width="600" />
+  <br><br>
 
 [![Release](https://img.shields.io/github/v/release/AnInsomniacy/motrix-next?label=release&color=7B3ED1)](https://github.com/AnInsomniacy/motrix-next/releases)
 [![GitHub downloads](https://img.shields.io/github/downloads/AnInsomniacy/motrix-next/total?label=GitHub%20downloads&color=7B3ED1)](https://github.com/AnInsomniacy/motrix-next/releases)
