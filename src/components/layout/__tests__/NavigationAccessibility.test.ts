@@ -93,12 +93,12 @@ describe('keyboard-accessible navigation', () => {
     expect(showAddTaskDialogMock).toHaveBeenCalledTimes(1)
   })
 
-  it('keeps the sidebar logo visual-only instead of linking to GitHub', () => {
+  it('keeps the sidebar logo out of keyboard navigation', () => {
     const wrapper = mount(AsideBar)
+    const logo = wrapper.get('.logo-mini')
 
-    expect(wrapper.find('.logo-mini a').exists()).toBe(false)
-    expect(wrapper.find('.logo-mini').text()).toContain('NEXT')
-    expect(wrapper.html()).not.toContain('github.com/AnInsomniacy/rayburst')
+    expect(logo.find('a, button, [tabindex]').exists()).toBe(false)
+    expect(logo.get('img').attributes('alt')).toBe('')
   })
 
   it('renders TaskSubnav routes as buttons and marks the active route', async () => {
